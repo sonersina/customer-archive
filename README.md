@@ -5,22 +5,22 @@
 ![Screenshot](er_diagram.jpg)
 
 
-#Veritabanını Oluşturma
+# Veritabanını Oluşturma
 
-####Bu projede yerel Docker PostgreSQL veritabanı kullanılır. Veritabanını kullanmak için makine üzerinde Docker'ın yüklü olması gerekir.<br><br>Veritabanını çalıştırmak için, terminaldeki aşağıdaki komutu çalıştırın:
+#### Bu projede yerel Docker PostgreSQL veritabanı kullanılır. Veritabanını kullanmak için makine üzerinde Docker'ın yüklü olması gerekir.<br><br> Veritabanını çalıştırmak için, terminaldeki aşağıdaki komutu çalıştırın:
 
-###docker run --name some-postgres -e POSTGRES_PASSWORD=admin -p 5432:5432 -d postgres
+### docker run --name some-postgres -e POSTGRES_PASSWORD=admin -p 5432:5432 -d postgres
 
-####Bu, PostgreSQL görüntüsündeki Docker bir konteynerini başlatacak ve aşağıdaki kimlik bilgileriyle bir veritabanı oluşturacaktır:
+#### Bu, PostgreSQL görüntüsündeki Docker bir konteynerini başlatacak ve aşağıdaki kimlik bilgileriyle bir veritabanı oluşturacaktır:
 
-####- Host: `localhost`
-####- Port: `5432`
-####- User: `postgres`
-####- Password: `admin` 
+#### - Host: `localhost`
+#### - Port: `5432`
+#### - User: `postgres`
+#### - Password: `admin` 
 
-#Veritabanına Bağlanma
+# Veritabanına Bağlanma
 
-####Veritabanına Spring Boot projenizden bağlanmak için, aşağıdaki özelliklerle 'application.yml' dosyasını güncelleyin:
+#### Veritabanına Spring Boot projenizden bağlanmak için, aşağıdaki özelliklerle 'application.yml' dosyasını güncelleyin:
 
 - spring:
 - datasource:
