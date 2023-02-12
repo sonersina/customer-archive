@@ -16,7 +16,7 @@
 ####- Host: `localhost`
 ####- Port: `5432`
 ####- User: `postgres`
-####- Password: `admin`  <br><br><br>
+####- Password: `admin` 
 
 #Veritabanına Bağlanma
 
@@ -85,7 +85,8 @@
 }
 ```
 
-##CustomerController
+
+#CustomerController
 
 ### Create Customer
 
