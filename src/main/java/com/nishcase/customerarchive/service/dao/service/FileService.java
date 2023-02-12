@@ -128,7 +128,6 @@ public class FileService {
       if (!Arrays.asList("image/jpeg", "application/pdf", "image/png").contains(file.getContentType())) {
         throw new IllegalArgumentException("Geçersiz dosya tipi. JPG/PDF/PNG tipindeki dosyalar kabul edilmektedir.");
       }
-      //methoda dönebilir ??
 
       String fileName = this.createFileName(file.getOriginalFilename());
       String filePath = FILE_PATH + fileName;
@@ -137,7 +136,6 @@ public class FileService {
       Path path = Paths.get(filePath);
       Files.write(path, file.getBytes());
 
-      //dosya silinmeyebilir?
       Files.deleteIfExists(Paths.get(oldFile.getPath()));
 
       oldFile.setName(fileName);
